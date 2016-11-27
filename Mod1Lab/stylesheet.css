@@ -42,11 +42,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/***************************
-****************************
-Layout Styles
-****************************
-***************************/
+/******* Layout Styles **********/
 
 .container {
     padding-right: 15px;
@@ -89,7 +85,28 @@ Layout Styles
     .col-2-3 {
         width: 66.6666%;
     }
+
+    /* Column x4*/
+    .col-1-4 {
+        width: 25%;
+        min-height: 1px;
+    }
+
+    /* float an element to the right*/
+    .pull-right-sm {
+        float:right;
+    }
 }
+
+/* media query for extra small devices*/
+@media only screen and (max-width : 47.9375em) {
+    /*remove paddding*/
+    .remove-gutter-xs {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
 
 /*
 Since the columns will float left for any device larger than extra small, 
@@ -113,4 +130,9 @@ Module Styles
 }
 .background-tertiary {
   background: #8DC63F; /*Green*/
+}
+
+footer {
+    color: white;
+    background-color: #594a43;
 }
